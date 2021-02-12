@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    
+    public float speed = 15;
     void Start()
     {
         
@@ -14,6 +14,6 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         Debug.Log(Time.deltaTime);
-        transform.Translate(Vector3.forward * Time.deltaTime * 10);
+        transform.Translate(Vector3.forward * Time.deltaTime * speed);
     }
 }
